@@ -7,5 +7,32 @@ lector = csv.reader(archivo)
 
 encabezado = next(lector)
 
+temperatura_maxima = -999
+temperatura_minima = 999
+
+anio_maximo = ""
+anio_minimo = ""
+
 for fila in lector:
-    print("Año:", fila[1], "- Temperatura promedio:", fila[2])
+
+    temperatura = float(fila[2])
+
+    if temperatura > temperatura_maxima:
+        temperatura_maxima = temperatura
+        anio_maximo = fila[1]
+
+    if temperatura < temperatura_minima:
+        temperatura_minima = temperatura
+        anio_minimo = fila[1]
+
+print("Temperatura mas alta:")
+print(temperatura_maxima)
+
+print("Año de temperatura maxima:")
+print(anio_maximo)
+
+print("Temperatura mas baja:")
+print(temperatura_minima)
+
+print("Año de temperatura minima:")
+print(anio_minimo)
