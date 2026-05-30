@@ -2,6 +2,7 @@
 Temperaturas promedio
 
 -Año: 2010 - Temperatura promedio: 0.7233
+
 -Año: 2010 - Temperatura promedio: 0.6736
 -Año: 2011 - Temperatura promedio: 0.6083
 -Año: 2011 - Temperatura promedio: 0.5326
